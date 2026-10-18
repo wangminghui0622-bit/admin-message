@@ -1,0 +1,14 @@
+Name: mcms.rpc
+ListenOn: 0.0.0.0:9215
+
+Log:
+  ServiceName: mcmsRpcLogger
+  Mode: console
+  Level: info
+
+DatabaseDSN: root:@tcp(127.0.0.1:3306)/admin_zero?charset=utf8mb4&parseTime=True&loc=Local&multiStatements=true
+
+RedisConf:
+  Host: 127.0.0.1:6379
+  Type: node
+  Pass:
